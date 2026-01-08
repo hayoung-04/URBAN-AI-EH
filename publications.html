@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -89,7 +88,7 @@
 
     /* ===== Award Gallery ===== */
     .award-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
-    .award-grid img { width: 100%; border-radius: 14px; box-shadow: 0 12px 30px rgba(0,0,0,.15); }
+    .award-grid img { width: 100%; height: 400px; object-fit: cover; border-radius: 14px; box-shadow: 0 12px 30px rgba(0,0,0,.15); }
 
     /* ================= FOOTER ================= */
     footer { padding: 60px 0; background: #0f172a; color: #cbd5f5; font-size: 14px; text-align: center; }
@@ -114,6 +113,8 @@
           <a href="javascript:void(0)" onclick="switchTab('journal')">Journal</a>
           <a href="javascript:void(0)" onclick="switchTab('conference')">Conference</a>
           <a href="javascript:void(0)" onclick="switchTab('award')">Award</a>
+          <a href="javascript:void(0)" onclick="switchTab('patent')">Patent</a>
+          <a href="javascript:void(0)" onclick="switchTab('book')">Book</a>
         </div>
       </div>
       
@@ -137,6 +138,8 @@
     <button class="tab active" data-tab="journal">Journal</button>
     <button class="tab" data-tab="conference">Conference</button>
     <button class="tab" data-tab="award">Award</button>
+    <button class="tab" data-tab="patent">Patent</button>
+    <button class="tab" data-tab="book">Book</button>
   </div>
 </section>
 
@@ -211,6 +214,22 @@
         <img src="https://i.postimg.cc/CMWfBw17/unnamed-(2).png" alt="Award 1">
         <img src="https://i.postimg.cc/dQ7yVhq1/unnamed-(3).png" alt="Award 2">
         <img src="https://i.postimg.cc/PNsht3dp/unnamed-(4).png" alt="Award 3">
+      </div>
+    </div>
+
+    <div class="tab-content" id="section-patent">
+      <div class="award-grid">
+        <img src="https://i.postimg.cc/C52kvcRk/10-2895065-hanguggonghagdaehaggyo-teugheojeung.png" alt="Patent 1">
+        <img src="https://lh3.googleusercontent.com/..." alt="Patent 2">
+        <img src="https://lh3.googleusercontent.com/..." alt="Patent 3">
+      </div>
+    </div>
+
+    <div class="tab-content" id="section-book">
+      <div class="award-grid">
+        <img src="https://lh3.googleusercontent.com/..." alt="Book 1">
+        <img src="https://lh3.googleusercontent.com/..." alt="Book 2">
+        <img src="https://lh3.googleusercontent.com/..." alt="Book 3">
       </div>
     </div>
 
